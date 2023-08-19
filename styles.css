@@ -34,6 +34,7 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
+  padding-left: 15%;
 }
 
 h1,
@@ -42,6 +43,14 @@ h3,
 h4 {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
+}
+
+h1 {
+  font-size: 70px;
+}
+
+.hero-paragraph {
+  font-size: var(--big-font-size);
 }
 
 ul {
@@ -69,9 +78,13 @@ img {
   position: fixed;
   top: 0;
   right: 0;
-  bottom: 0;
+  bottom: 10%;
   width: 200px;
   color: var(--title-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-right: 5%;
 }
 
 .header a:hover {
@@ -103,4 +116,30 @@ img {
 
 .hero-title span {
   color: var(--first-color);
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 10%;
+  justify-content: center;
+  max-width: 900px;
+}
+
+button {
+  font-family: var(--body-font);
+  background-color: var(--first-color);
+  color: white;
+  width: 100px;
+  border-radius: 5px;
+  border-color: var(--first-color);
+  box-shadow: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--title-color);
+  border-color: var(--title-color);
 }
