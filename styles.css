@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=NTR&family=Work+Sans:wght@100;500;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&family=Work+Sans:wght@100;500;600&display=swap');
 :root {
   --first-color: #bd2606;
   --title-color: #4c4543;
   --body-color: #f5f2f1;
   --text-color: #878685;
 
-  --body-font: 'NTR', sans-serif;
+  --body-font: 'Varela Round', sans-serif;
   --big-font-size: 2rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -79,12 +78,12 @@ img {
   top: 0;
   right: 0;
   bottom: 10%;
-  width: 200px;
+  width: 20vw;
   color: var(--title-color);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding-right: 5%;
+  padding-right: 10%;
 }
 
 .header a:hover {
@@ -114,7 +113,7 @@ img {
   align-items: center;
 }
 
-.hero-title span {
+span {
   color: var(--first-color);
 }
 
@@ -137,9 +136,36 @@ button {
   border-color: var(--first-color);
   box-shadow: none;
   cursor: pointer;
+  padding: 5px;
 }
 
 button:hover {
   background-color: var(--title-color);
   border-color: var(--title-color);
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 750px;
+}
+
+.about-list-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 400px;
+}
+
+.arrow {
+  color: var(--first-color);
+}
+
+.context {
+  padding-right: 50px;
+}
+
+.context p {
+  text-align: justify;
 }

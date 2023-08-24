@@ -33,15 +33,23 @@
     </header>
     <section id="hero">
       <div class="hero">
+        <img
+          src="./e8a5396aa14456c1bb3aba63118b9c46.gif"
+          alt="gif de uma raposa correndo em circulos"
+        />
         <h1 class="hero-title">ola, eu sou <span>larissa</span>.</h1>
         <p class="hero-paragraph">
           eu sou uma desenvolvedora de software de salvador, brasil. eu tenho um
           grande interesse no mundo do front-end, interação humano-computador e
           análise de dados.
         </p>
-        <button class="contact-me">
-          <i class="uil uil-envelope"></i> fale comigo!
-        </button>
+
+        <br />
+        <a href="#contact-me">
+          <button class="contact-me" id="say-hi">
+            <i class="uil uil-envelope"></i> diga oi!
+          </button>
+        </a>
       </div>
     </section>
     <section id="about">
@@ -50,18 +58,29 @@
         <div class="context">
           <p>
             atualmente eu sou uma consultora de desenvolvimento de software na
-            thoughtworks, trabalhando para uma cliente dos estados unidos no
-            setor de plataforma e produto. estou me graduando em bacharelado de
-            sistemas de informação na universidade federal da bahia.
+            <span>thoughtworks</span>, trabalhando para uma cliente dos estados
+            unidos no setor de plataforma e produto. estou me graduando em
+            bacharelado de sistemas de informação na universidade federal da
+            bahia.
           </p>
           <p>algumas tecnologias que venho trabalhando:</p>
-          <ul>
-            <li>javascript es6+</li>
-            <li>react.js (cra & next)</li>
-            <li>node.js (nestjs)</li>
-            <li>html & css</li>
-            <li>jest</li>
-          </ul>
+          <br />
+          <div class="about-list-container">
+            <ul>
+              <li><i class="uil uil-arrow-right arrow"></i>javascript es6+</li>
+              <li>
+                <i class="uil uil-arrow-right arrow"></i>react.js (cra & next)
+              </li>
+              <li><i class="uil uil-arrow-right arrow"></i>node.js (nestjs)</li>
+            </ul>
+            <ul>
+              <li><i class="uil uil-arrow-right arrow"></i>html & css</li>
+              <li><i class="uil uil-arrow-right arrow"></i>jest</li>
+              <li>
+                <i class="uil uil-arrow-right arrow"></i>react testing library
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="image">
           <img
@@ -72,7 +91,7 @@
       </div>
     </section>
     <section id="experience">
-      <h1 class="experience-title">/experiencia</h1>
+      <h1 class="experience-title">/experiência</h1>
       <div class="selector">
         <h2 class="selector-item">thoughtworks</h2>
         <h3 class="selector-item-subtitle">dez 2021 - ago 2023</h3>
@@ -104,7 +123,7 @@
       <h1 class="section-title">/projetos</h1>
       <!-- carrosel -->
     </section>
-    <section id="contact">
+    <section id="contact-me">
       <h1 class="section-title">/contato</h1>
       <form action="">
         <div class="inputs">
