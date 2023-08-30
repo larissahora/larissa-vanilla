@@ -169,3 +169,37 @@ button:hover {
 .context p {
   text-align: justify;
 }
+
+.tabs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.tab.active {
+  border-bottom: 3px solid var(--first-color);
+  color: var(--first-color);
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+  width: 40vw;
+  height: 320px;
+  padding-top: 5px;
+}
+
+.tab-content-list {
+  text-align: justify;
+  padding-top: 10px;
+}

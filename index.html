@@ -92,31 +92,33 @@
     </section>
     <section id="experience">
       <h1 class="experience-title">/experiência</h1>
-      <div class="selector">
-        <h2 class="selector-item">thoughtworks</h2>
-        <h3 class="selector-item-subtitle">dez 2021 - ago 2023</h3>
-        <h2 class="selector-item">solutis tecnologias</h2>
-        <h3 class="selector-item-subtitle">ago 2019 - nov 2021</h3>
+      <div class="tabs">
+        <h2 class="tab active" onclick="showContent(1)">thoughtworks</h2>
+        <h2 class="tab" onclick="showContent(2)">solutis tecnologias</h2>
+        <h2 class="tab" onclick="showContent(3)">mds tecnologias</h2>
       </div>
-      <div class="content">
-        <div class="content-tw">
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+      <div class="tab-content active" id="1">
+        <h5 class="selector-item-subtitle">dez 2021 - ago 2023</h3>
+          <ul class="tab-content-list">
+            <li><i class="uil uil-arrow-right arrow"></i>Contribuí para investigações de soluções tecnológicas centradas em dados e experiência do usuário, resultando em impactos rápidos e significativos nas habilidades do cliente.</li>
+            <li><i class="uil uil-arrow-right arrow"></i>Participei ativamente das tomadas de decisão estratégicas relacionadas à qualidade e implementação de CI/CD, contribuindo para o desenvolvimento de processos eficientes e garantindo altos padrões de qualidade em projetos.</li>
+            <li><i class="uil uil-arrow-right arrow"></i>Desempenhei um papel de liderança técnica em duas iniciativas-chave, proporcionando orientação e suporte à equipe.</li>
           </ul>
         </div>
-        <div class="content-tw">
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
+        <div class="tab-content" id="2">
+        <h5 class="selector-item-subtitle">ago 2019 - nov 2021</h3>
+        <ul class="tab-content-list">
+          <li><i class="uil uil-arrow-right arrow"></i>Aprimorei os testes unitários em um projeto, resultando em um aumento de 55% na cobertura de testes. Essa melhoria contribuiu para a qualidade e confiabilidade do software.</li>
+          <li><i class="uil uil-arrow-right arrow"></i>Reduzi os "code smells" em 65% em um projeto, utilizando o SonarQube como ferramenta de monitoramento e identificação de problemas de código. Essa ação resultou em um código mais limpo e de fácil manutenção.</li>
+          <li><i class="uil uil-arrow-right arrow"></i>Liderei a refatoração de um projeto, reconhecendo a necessidade de adicionar um gerenciador de formulários para melhorar a escalabilidade da aplicação. Essa iniciativa aumentou a eficiência e a capacidade de expansão do projeto.
+          </li>
+        </ul>
+      </div>
+        <div class="tab-content" id="3">
+        <h5 class="selector-item-subtitle">jun 2018 - ago 2019</h3>
+        <ul class="tab-content-list">
+          <li><i class="uil uil-arrow-right arrow"></i>Desenvolvi websites robustos utilizando Laravel e VueJS durante 1 ano de estágio.</li>
+        </ul>
       </div>
     </section>
     <section id="projects">
@@ -151,5 +153,21 @@
         <i class="uil uil-linkedin"></i>
       </div>
     </footer>
+
+    <script>
+      function showContent(tabId) {
+        const tabContents = document.querySelectorAll('.tab-content')
+        tabContents.forEach(content => content.classList.remove('active'))
+
+        const tabs = document.querySelectorAll('.tab')
+        tabs.forEach(tab => tab.classList.remove('active'))
+
+        const selectedTab = document.getElementById(tabId);
+        selectedTab.classList.add('active')
+
+        const clickedTab = document.querySelector('.tab:nth-child('+ tabId +')')
+        clickedTab.classList.add('active')
+      }
+    </script>
   </body>
 </html>
