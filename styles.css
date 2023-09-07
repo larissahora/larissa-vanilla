@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&family=Work+Sans:wght@100;500;600&display=swap');
+
+/*=============================================
+=           definindo variáveis               =
+=============================================*/
+
 :root {
   --first-color: #bd2606;
   --title-color: #4c4543;
@@ -48,10 +53,6 @@ h1 {
   font-size: 70px;
 }
 
-.hero-paragraph {
-  font-size: var(--big-font-size);
-}
-
 ul {
   list-style: none;
 }
@@ -71,7 +72,30 @@ img {
   border-radius: 15px;
 }
 
-/* reusable section */
+span {
+  color: var(--first-color);
+}
+
+button {
+  font-family: var(--body-font);
+  background-color: var(--first-color);
+  color: white;
+  width: 100px;
+  border-radius: 5px;
+  border-color: var(--first-color);
+  box-shadow: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+button:hover {
+  background-color: var(--title-color);
+  border-color: var(--title-color);
+}
+
+/*=============================================
+=            Header            =
+=============================================*/
 
 .header {
   position: fixed;
@@ -94,27 +118,15 @@ img {
   font-weight: var(--font-semi-bold);
 }
 
-.socials {
-  display: flex;
-  justify-content: space-between;
-  max-width: 73px;
-  font-size: 20px;
-  cursor: pointer;
-}
+/*=====  End of Header  ======*/
 
-.socials i:hover {
-  color: var(--first-color);
-}
+/*=============================================
+=            Hero     section                 =
+=============================================*/
 
-.footer {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-span {
-  color: var(--first-color);
+.hero-paragraph {
+  font-size: var(--big-font-size);
+  text-align: justify;
 }
 
 .hero {
@@ -127,22 +139,11 @@ span {
   max-width: 900px;
 }
 
-button {
-  font-family: var(--body-font);
-  background-color: var(--first-color);
-  color: white;
-  width: 100px;
-  border-radius: 5px;
-  border-color: var(--first-color);
-  box-shadow: none;
-  cursor: pointer;
-  padding: 5px;
-}
+/*=====  End of Hero section block  ======*/
 
-button:hover {
-  background-color: var(--title-color);
-  border-color: var(--title-color);
-}
+/*=============================================
+=            About me Section            =
+=============================================*/
 
 .about {
   display: flex;
@@ -150,16 +151,13 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   max-width: 750px;
+  padding-bottom: 150px;
 }
 
 .about-list-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   max-width: 400px;
-}
-
-.arrow {
-  color: var(--first-color);
 }
 
 .context {
@@ -169,6 +167,12 @@ button:hover {
 .context p {
   text-align: justify;
 }
+
+/*=====  End of About me section  ======*/
+
+/*=============================================
+=            Experience section            =
+=============================================*/
 
 .tabs {
   display: flex;
@@ -202,4 +206,112 @@ button:hover {
 .tab-content-list {
   text-align: justify;
   padding-top: 10px;
+}
+
+/*=====  End of Experience section  ======*/
+
+/*=============================================
+=            Projects section            =
+=============================================*/
+
+.carousel-container {
+  display: flex;
+  overflow: hidden;
+  width: 30%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-slide i {
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.projects-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding-bottom: 50px;
+}
+
+.projects-buttons i {
+  cursor: pointer;
+  font-size: 25px;
+}
+
+/*=====  End of Projects section  ======*/
+
+/*=============================================
+=            Contact me section            =
+=============================================*/
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  width: 373px;
+  gap: 25px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+input,
+textarea {
+  font-family: var(--body-font);
+  padding: 5px;
+}
+
+.input-section-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+/*=====  End of Contact me section  ======*/
+
+/**
+ *
+ * Reusable css
+ *
+ */
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  max-width: 73px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.socials i:hover {
+  color: var(--first-color);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arrow {
+  color: var(--first-color);
 }
